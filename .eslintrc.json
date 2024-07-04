@@ -1,0 +1,50 @@
+{
+	"extends": [
+		"airbnb",
+		"airbnb-typescript",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended"
+	],
+	"parserOptions": {
+		"project": "./tsconfig.json"
+	},
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"rules": {
+		"@typescript-eslint/no-unused-vars": "off",
+		"@typescript-eslint/no-use-before-define": "off",
+		"@typescript-eslint/return-await": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"import/extensions": "off",
+		"import/prefer-default-export": "off",
+		"import/no-extraneous-dependencies": "off",
+		"eslint-disable import/extensions": "off",
+		"eslint-disable jsx-a11y/anchor-is-valid": "off",
+		"react/no-array-index-key": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/function-component-definition": "off",
+		"react/require-default-props": [
+			"error",
+			{
+				"ignoreFunctionalComponents": true
+			}
+		],
+		"jsx-a11y/control-has-associated-label": "off",
+		"jsx-a11y/label-has-associated-control": "off",
+		"no-empty": "off",
+		"no-console": [
+			"off",
+			{
+				"allow": [
+					"error",
+					"warn",
+					"info"
+				]
+			}
+		]
+	}
+}
